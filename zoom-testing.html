@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" href="icomoon/demo-files/demo.css">
+    <link rel="stylesheet" href="icomoon/style.css"></link>
+    <link rel="stylesheet" href="css/font-awesome.css"></link>
+    <!-- // <script src="https://code.highcharts.com/highcharts.js"></script> -->
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="top-bar">
+        <div class="user-menu">
+          <span class="icon-location">London,UK</span>
+          <div class="notification-icon">
+            <span class="icon-bell"></span>
+            <span class="badge">3</span>
+          </div>
+        </div>
+        <div class="logo">
+          <a href="dashboard.html">
+        <img src="images/new_logo.png" alt="Home">
+      </a>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="sidebar">
+          <ul>
+            <li class="active-list-item"><a href="dashboard.html"><i class="fa fa-tachometer"></i></a></li>
+            <li><a href="aqua-scan.html"><i class="fa fa-list"></i></a></li>
+            <li><a href="userprofile.html"><i class="fa fa-user"></i></a></li>
+            <li><a href=""><i class="fa fa-files-o"></i></a></li>
+            <li><a href="settings.html"><i class="fa fa-cog"></i></a></li>
+          </ul>
+        </div>
+        <div class="container">
+          <div id="chart"></div>
+        </div>
+      </div>
+      <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+      <script type="text/javascript" src="http://code.highcharts.com/stock/highstock.js"></script>
+      <script src="https://code.highcharts.com/modules/exporting.js"></script>
+      <script type="text/javascript" src="js/link.js"></script>
+      <script>
+  
+$(function () {
+    $.get('dummy.json', function (res) {
+        console.log(res.temp1);
+        var data = res.data;
+        $('#chart').highcharts('StockChart', {
+           chart: { 
+            zoomType: 'x',
+            panning: true,
+            panKey: 'shift'
+          },
+            rangeSelector : {
+              allButtonsEnabled: true,
+                buttons: [{
+                    type: 'minute',
+                    count: 60,
+                    text: '1H',
+                   
+                }, {
+                    type: 'minute',
+                    count: 180,
+                    text: '3H',
+            
+                },
+                {
+                    type: 'minute',
+                    count: 240,
+                    text: '6H',
+                    
+                }, {
+                    type: 'all',
+                    text: 'All',
+                }],
+                buttonTheme: {
+                    width: 60
+                },
+                inputDateFormat: '%H:%M:%L',
+                inputEditDateFormat: '%H:%M:%L',
+                selected: 3
+            },
+            navigator: {
+                enabled: false
+              },
+              scrollbar: {
+                enabled: false
+              },
+            title : {
+                text : 'Sealed Air chart'
+            },
+            series : [{
+                name : "Temperature1",
+                data : res.data,
+                color: "#0fffff"
+              },
+              {
+                name : "Temperature2",
+                data : res.temp1,
+                color: "#FF0000"
+              },
+              {
+                name : "Temperature3",
+                data : res.temp2,
+                color: "#555"
+              }
+            ]
+        });
+      });
+});
+      </script>
+    </body>
+</html>

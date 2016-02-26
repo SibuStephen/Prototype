@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Probe Tools Checklist</title>
+    	<link rel="stylesheet" href="icomoon/style.css"/>
+    	<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/all.css"/>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="top-bar">
+				<div class="user-menu">
+					<span class="icon-location">London,UK</span>
+					<div class="notification-icon">
+						<span class="icon-bell"></span>
+						<span class="badge">3</span>
+					</div>
+				</div>
+				<div class="logo">
+					<a href="dashboard.html">
+        <img src="images/new_logo.png" alt="Home">
+      </a>
+				</div>
+			</div>
+			<div class="content-container">
+				<div class="sidebar">
+					<ul>
+						<li ><i class="fa fa-tachometer"></i></li>
+						<li><i class="fa fa-list"></i></li>
+						<li><i class="fa fa-user"></i></li>
+						<li><i class="fa fa-cog"></i></li>
+					</ul>
+				</div>
+				<div class="container">
+					<div class="aqua-wrapper">
+						<ul id="progress">
+						    <li><div class="node green"><span class="status  fa fa-check"></span></div></li>
+						    <li><div class="divider green" id="accordion-divider-1" style="height:40px;"></div></li>
+						    <li><div class="node blue"><span class="status">2</span></div></li>
+						    <li><div class="divider white" id="accordion-divider-2" style="height: 40px;"></div></li>
+						    <li><div class="node grey"><span class="status">3</span></div></li>
+						    <li><div class="divider white" id="accordion-divider-3" style="height: 40px;"></div></li>
+						    <li><div class="node grey"><span class="status">4</span></div></li>
+						    <li><div class="divider white" id="accordion-divider-4" style="height: 40px;"></div></li>
+						    <li><div class="node grey"><span class="status">5</span></div></li>
+						    <li><div class="divider white" id="accordion-divider-5" style="height: 40px;"></div></li>
+						    <li><div class="node grey"><span class="status">6</span></div></li>
+
+						</ul>
+						<div class="accordion">
+							<div class="accordion-section" data-accordion-id="1">
+								<div class="accordion-header">
+									<a class="accordion-section-title" >Audit Information</a>
+									<i class="accordion-btn fa fa-minus-square-o open"></i>
+								</div>
+								<div class="accordion-section-content" >
+									<form class="padding">
+										<div class="form form-inline">
+											<div class="form-row">
+												<div class="form-col">
+													<label>Report Id</label>
+													<div><input type="text"  /></div>
+												</div>
+												<div class="form-col">
+													<label>Reporter Name</label>
+													<div><input type="text" /></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Reporter Location</label>
+													<div><input type="text" /></div>
+												</div>
+												<div class="form-col">
+													<label>Business Unit </label>
+													<div><input type="text" /></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								<div class="accordion-footer padding">
+									<button class="btn btn-primary" onclick="openNext(this,2)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+								</div>
+								</div><!--end .accordion-section-content-->
+							</div><!--end .accordion-section-->
+
+							<div class="accordion-section" data-accordion-id="2">
+
+								<div class="accordion-header">
+									<a class="accordion-section-title">Customer Information</a>
+									<i class="accordion-btn fa fa-plus-square-o close"></i>
+
+								</div>
+								<div class="accordion-section-content" style="display:none">
+
+									<form class="padding">
+										<div class="form form-inline">
+											<div class="form-row">
+												<div class="form-col">
+													<label>Company Name</label>
+													<div><input type="text"  /></div>
+												</div>
+												<div class="form-col">
+													<label>Customer Name</label>
+													<div><input type="text"  /></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Customer Group Name</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Customer Contact</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Customer Role</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Postal/Zip Code</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Contact Phone Number</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Contact Email</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Location</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Country</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Currency</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col"></div>
+											</div>
+										</div>
+									</form>
+								<div class="accordion-footer padding">
+									<button class="btn btn-primary" onclick="openNext(this,3)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+								</div>
+								</div>
+							</div><!--end .accordion-section-->
+
+							<div class="accordion-section" data-accordion-id="3">
+
+								<div class="accordion-header">
+									<a class="accordion-section-title">Production Information</a>
+									<i class="accordion-btn fa fa-plus-square-o close"></i>
+
+								</div>
+								<div class="accordion-section-content" style="display:none">
+									<form class="padding">
+										<div class="form form-inline">
+											<div class="form-row">
+												<div class="form-col">
+													<label>Total Water in Products</label>
+													<div><input type="text"  /></div>
+												</div>
+												<div class="form-col">
+													<label>Operating days per week</label>
+													<div><input type="text"  /></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Operating hours per day</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col"></div>
+											</div>
+											<div class="form-row">
+												<fieldset>
+												  <legend>Files Folders</legend>
+												  <div class="repeat-div">
+
+												  	<div class="form-row">
+														<div class="form-col">
+															<label>Departments</label>
+															<div><input type="text"/></div>
+														</div>
+													</div>
+												  	<div class="form-row">
+														<div class="form-col">
+															<fieldset>
+															  <legend>Applications within Department</legend>
+																<div  class="repeat-div">
+																	<div class="form-row">
+																		<div class="form-col">
+																  			<input type="text">
+																  		</div>
+																  	</div>
+
+																	<span class="fa fa-times remove-field"></span>
+																</div>
+															 	<button class="btn btn-primary btn-sm"><span class="btn-icon-position fa fa-plus "> Add More</span></button>
+															 </fieldset>
+														</div>
+													</div>
+													<span class="fa fa-times remove-field"></span>
+												  </div>
+													<button class="btn btn-primary btn-sm">
+														<span class="btn-icon-position fa fa-plus "> Add More</span>
+													</button>
+												 </fieldset>
+
+											</div>
+										</div>
+									</form>
+									<div class="accordion-footer padding">
+										<button class="btn btn-primary" onclick="openNext(this,4)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+									</div>
+
+								</div>
+							</div><!--end .accordion-section-->
+
+							<div class="accordion-section" data-accordion-id="4">
+
+								<div class="accordion-header">
+									<a class="accordion-section-title">Water</a>
+									<i class="accordion-btn fa fa-plus-square-o close"></i>
+
+								</div>
+								<div class="accordion-section-content" style="display:none">
+									<form class="padding">
+										<div class="form form-inline">
+											<fieldset>
+											  <legend>Water:</legend>
+												<div class="form-row">
+													<div class="form-col">
+														<label>Source Name </label>
+														<div><input type="text"  /></div>
+													</div>
+													<div class="form-col">
+														<label>Source Type </label>
+														<div><input type="text"  /></div>
+													</div>
+												</div>
+												<div class="form-row">
+													<div class="form-col">
+														<label>Volume Units </label>
+														<div><input type="text"/></div>
+													</div>
+													<div class="form-col">
+														<label>Cost Per Volume Unit</label>
+														<div><input type="text"/></div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-sm"><span class="btn-icon-position fa fa-plus "> Add More</span></button>
+											 </fieldset>
+
+										</div>
+									</form>
+									<div class="accordion-footer padding">
+										<button class="btn btn-primary" onclick="openNext(this,5)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+									</div>
+
+								</div>
+							</div><!--end .accordion-section-->
+
+							<div class="accordion-section" data-accordion-id="5">
+
+								<div class="accordion-header">
+									<a class="accordion-section-title">Total In and Out</a>
+									<i class="accordion-btn fa fa-plus-square-o close"></i>
+
+								</div>
+								<div class="accordion-section-content" style="display:none">
+									<form class="padding">
+										<div class="form form-inline">
+											<div class="form-row">
+												<div class="form-col">
+													<label>Total Volume</label>
+													<div><input type="text"  /></div>
+												</div>
+												<div class="form-col">
+													<label>Total Incoming Water Volume </label>
+													<div><input type="text"  /></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Total Outgoing Water Volume</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+												</div>
+											</div>
+										</div>
+									</form>
+									<div class="accordion-footer padding">
+										<button class="btn btn-primary" onclick="openNext(this,6)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+									</div>
+
+								</div>
+							</div><!--end .accordion-section-->
+
+							<div class="accordion-section" data-accordion-id="6">
+
+								<div class="accordion-header">
+									<a class="accordion-section-title">Value Stream</a>
+									<i class="accordion-btn fa fa-plus-square-o close"></i>
+
+								</div>
+								<div class="accordion-section-content" style="display:none">
+									<form class="padding">
+										<div class="form form-inline">
+											<fieldset>
+												<legend>Value Stream</legend>
+												<div class="repeat-div">
+													<div class="form-row">
+														<div class="form-col">
+															<label>Value Stream Name</label>
+															<div><input type="text"  /></div>
+														</div>
+														<div class="form-col">
+															<label>Cost Per Unit</label>
+															<div><input type="text"  /></div>
+														</div>
+													</div>
+													<span class="fa fa-times remove-field"></span>
+												</div>
+												<button class="btn btn-primary btn-sm"><span class="btn-icon-position fa fa-plus "> Add More</span></button>
+											</fieldset>
+
+										</div>
+									</form>
+									<div class="accordion-footer padding">
+										<button class="btn btn-primary" onclick="openNext(this)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+									</div>
+								</div>
+							</div><!--end .accordion-section-->
+							<button class="btn btn-primary pull-right" onclick="redirectAquaScan()">Upload Csv <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+						</div>
+
+					</div>
+				</div>
+      		</div>
+    	</div>
+
+		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="js/link.js">
+
+		</script>
+
+    </body>
+</html>

@@ -1,0 +1,147 @@
+body{
+  color:gray;
+  font-family: 'Roboto', sans-serif;
+}
+label{
+  font-weight: 600;
+}
+/****progress******************/
+.green{
+      background-color: $success-color;
+}
+.grey {
+    background-color: rgba(201, 201, 201, 1);
+}
+.blue {
+    background-color: $primary-color;
+}
+.white{
+  background-color:#fff;
+}
+#progress{
+	float: left;
+  margin-right:10px;
+
+  .node {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      display:inline-block;
+      transition: all 1000ms ease;
+
+      .status{
+        color: white;
+        font-size: 60%;
+        height: 100%;
+        margin: 5px 5px;
+        display: inline-block;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        width:50%;
+        text-align:center;
+      }
+  }
+  .activated {
+    box-shadow: 0px 0px 3px 2px rgba(194, 255, 194, 0.8);
+  }
+  .divider {
+    height: 40px;
+    width: 6px;
+    margin-left: 7px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    transition: all 800ms ease;
+  }
+  li {
+      list-style: none;
+      line-height: 1px;
+
+      p {
+        display:inline-block;
+        margin-left: 25px;
+      }
+  }
+}
+/****End progress******************/
+.clear-fix{
+      clear: both;
+}
+.active{
+  color:#3D9EA7;
+  border-bottom:2px solid #3D9EA7 !important;
+}
+.uploaded-content{
+  .uploaded-item{
+    margin-bottom: 2%;
+  }
+    font-size: smaller;
+
+    .edit{
+        color: $primary-color;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .remove{
+    color: $danger-color;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+}
+.uploaded-item-text{
+    color:#64B44E;
+    i{
+        margin-right: 3px;
+    }
+}
+
+.aqua-wrapper{
+  width:100%;
+  margin-top:20px;
+}
+
+.aqua-scan-edit-form{
+  input{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    border:1px solid #D6D5D5;
+    &:focus{
+      outline: none;
+    }
+  }
+  .row{
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-bottom: 1px solid #eee;
+  }
+  .save-btn{
+    margin-top:5%;
+    margin-bottom:5%;
+    .btn{
+      padding:13px 40px;
+    }
+  }
+}
+
+.yesnoquestion{
+  span{
+    position: relative;
+    top:-8px;
+  }
+}
+.no-margin{
+  margin:0;
+}
+.remove-field{
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    color: $danger-color;
+    transform: translateY(-50%);
+}
+.repeat-div{
+  position: relative;
+}

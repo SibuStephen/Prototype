@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+    	<link rel="stylesheet" href="icomoon/style.css">
+    	<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/all.css"/>
+
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="top-bar">
+				<div class="user-menu">
+					<span class="icon-location">London,UK</span>
+					<div class="notification-icon">
+						<span class="icon-bell"></span>
+						<span class="badge">3</span>
+					</div>
+				</div>
+				<div class="logo">
+					<a href="dashboard.html">
+        <img src="images/new_logo.png" alt="Home">
+      </a>
+				</div>
+			</div>
+			<div class="content-container">
+				<div class="sidebar">
+					<ul>
+						<li><a href="dashboard.html"><i class="fa fa-tachometer"></i></a></li>
+						<li><a href="aqua-scan.html"><i class="fa fa-list"></i></a></li>
+						<li class="active-list-item"><a href="userprofiledisplay.html"><i class="fa fa-user"></i></a>
+						</li>
+						<li><a href="settings.html"><i class="fa fa-cog"></i></a></li>
+					</ul>
+				</div>
+				<div class="container">
+					<div class="aqua-wrapper">
+						<ul id="progress">
+						    <li>
+						    	<div class="node green">
+						    		<span class="status  fa fa-check"></span>
+					    		</div>
+				    		</li>
+						    <li>
+						    	<div class="divider green" id="accordion-divider-1" style="height:40px;"></div>
+					    	</li>
+						    <li>
+						    	<div class="node blue">
+						    		<span class="status">2</span>
+					    		</div>
+				    		</li>
+						    <li>
+						    	<div class="divider white" id="accordion-divider-2" style="height: 40px;"></div>
+					    	</li>
+						    <li>
+						    	<div class="node grey">
+						    		<span class="status">3</span>
+					    		</div>
+				    		</li>
+						    <li>
+						    	<div class="divider white" style="height:40px;" id="accordion-divider-3"></div>
+					    	</li>
+						    <li>
+						    	<div class="node grey">
+						    		<span class="status">4</span>
+					    		</div>
+				    		</li><li>
+						    	<div class="divider white" style="height:40px;" id="accordion-divider-4"></div>
+					    	</li>
+						    <li>
+						    	<div class="node grey">
+						    		<span class="status">5</span>
+					    		</div>
+				    		</li>
+				    		<li>
+						    	<div class="divider white" style="height:40px;" id="accordion-divider-5"></div>
+					    	</li>
+						    <li>
+						    	<div class="node grey">
+						    		<span class="status">6</span>
+					    		</div>
+				    		</li>
+				    		<li>
+						    	<div class="divider white" style="height:40px;" id="accordion-divider-6"></div>
+					    	</li>
+						    <li>
+						    	<div class="node grey">
+						    		<span class="status">7</span>
+					    		</div>
+				    		</li>
+
+						</ul>
+						<div class="accordion">
+							<div class="accordion-section" data-accordion-id="1">
+								<div class="accordion-header">
+									<a class="accordion-section-title" >Audit Information</a>
+									<i class="accordion-btn fa fa-minus-square-o open"></i>
+								</div>
+								<div class="accordion-section-content" style="" >
+									<form class="padding">
+										<div class="form form-inline">
+											<div class="form-row">
+												<div class="form-col">
+													<label>Report Id</label>
+													<div><input type="text"  /></div>
+												</div>
+												<div class="form-col">
+													<label>Reporter Name</label>
+													<div><input type="text" /></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Reporter Location</label>
+													<div><input type="text" /></div>
+												</div>
+												<div class="form-col">
+													<label>Business Unit </label>
+													<div><input type="text" /></div>
+												</div>
+											</div>
+										</div>
+									</form>
+									<div class="accordion-footer padding">
+										<button class="btn btn-primary" onclick="openNext(this,2)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+									</div>
+								</div><!--end .accordion-section-content-->
+							</div><!--end .accordion-section-->
+
+							<div class="accordion-section" data-accordion-id="2">
+
+								<div class="accordion-header">
+									<a class="accordion-section-title">Customer Information</a>
+									<i class="accordion-btn fa fa-plus-square-o close"></i>
+
+								</div>
+								<div class="accordion-section-content" style="display:none">
+
+									<form class="padding">
+										<div class="form form-inline">
+											<div class="form-row">
+												<div class="form-col">
+													<label>Company Name</label>
+													<div><input type="text"  /></div>
+												</div>
+												<div class="form-col">
+													<label>Customer Name</label>
+													<div><input type="text"  /></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Customer Group Name</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Customer Contact</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Customer Role</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Postal/Zip Code</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Contact Phone Number</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Contact Email</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Location</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Country</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Currency</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+												</div>
+											</div>
+										</div>
+									</form>
+									<div class="accordion-footer padding">
+										<button class="btn btn-primary" onclick="openNext(this,3)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+									</div>
+								</div>
+							</div><!--end .accordion-section-->
+
+							<div class="accordion-section" data-accordion-id="3">
+
+								<div class="accordion-header">
+									<a class="accordion-section-title">Measuring Units</a>
+									<i class="accordion-btn fa fa-plus-square-o close"></i>
+								</div>
+								<div class="accordion-section-content" style="display:none">
+									<form class="padding">
+										<div class="form form-inline">
+											<div class="form-row">
+												<div class="form-col">
+													<label>Local currency</label>
+													<div>
+														<select id="dropdown">
+															<option>- Select a value -</option>
+															<option>$</option>
+															<option>€</option>
+														</select>
+														<label for="dropdown" class="select"></label>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Currency in Report</label>
+													<div>
+														<select id="dropdown">
+															<option value="_none">- None -</option>
+															<option value="3">$</option>
+															<option value="4">€</option>
+														</select>
+														<label for="dropdown" class="select"></label>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Exchange Rate</label>
+													<div>
+														<select id="dropdown">
+															<option>- None -</option>
+															<option>Local</option>
+														</select>
+														<label for="dropdown" class="select"></label>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Volume</label>
+													<div>
+														<select id="dropdown">
+															<option>- Select a value -</option>
+															<option>ft³</option>
+															<option>gallons</option>
+															<option>m³</option>
+														</select>
+														<label for="dropdown" class="select"></label>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Volume in report</label>
+													<div>
+														<select id="dropdown">								<option>- Select a value -</option>
+															<option>ft³</option>
+															<option>gallons</option>
+															<option>m³</option>
+														</select>
+														<label for="dropdown" class="select"></label>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Weight</label>
+													<div>
+														<select id="dropdown">
+															<option>- Select a value -</option>
+															<option>kg</option>
+															<option>lbs</option>
+															<option >st</option>
+														</select>
+														<label for="dropdown" class="select"></label>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Temperature</label>
+													<div>
+														<select id="dropdown">
+															<option>- Select a value -</option>
+															<option>C</option>
+															<option>F</option>
+														</select>
+														<label for="dropdown" class="select"></label>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Surface</label>
+													<div>
+														<select id="dropdown">
+															<option>- Select a value -</option>
+															<option>acres</option>
+															<option>ft²</option>
+															<option>mls²</option>
+															<option>m²</option>
+															<option>yrd²</option>
+														</select>
+														<label for="dropdown" class="select"></label>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Surface in report</label>
+													<div>
+														<select id="dropdown">
+															<option>- Select a value -</option>
+															<option>acres</option>
+															<option>ft²</option>
+															<option>mls²</option>
+															<option>m²</option>
+															<option>yrd²</option>
+														</select>
+														<label for="dropdown" class="select"></label>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Pressure</label>
+													<div>
+														<select id="dropdown">
+															<option>- Select a value -</option>
+															<option>bar</option>
+															<option>PSI</option>
+														</select>
+														<label for="dropdown" class="select"></label>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Concentration</label>
+													<div>
+														<select id="dropdown">
+															<option>- Select a value -</option>
+															<option>ounce/gallon</option>
+															<option>w/w</option>
+														</select>
+														<label for="dropdown" class="select"></label>
+													</div>
+												</div>
+												<div class="form-col">
+												</div>
+											</div>
+
+										</div>
+									</form>
+									<div class="accordion-footer padding">
+										<button class="btn btn-primary" onclick="openNext(this,4)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+									</div>
+
+								</div>
+							</div><!--end .accordion-section-->
+
+							<div class="accordion-section" data-accordion-id="4">
+
+								<div class="accordion-header">
+									<a class="accordion-section-title">Cost Basis</a>
+									<i class="accordion-btn fa fa-plus-square-o close"></i>
+
+								</div>
+								<div class="accordion-section-content" style="display:none">
+
+									<form class="padding">
+										<div class="form form-inline">
+											<div class="form-row">
+												<div class="form-col">
+													<label>Salary rate cleaning operator - normal</label>
+													<div><input type="text"  /></div>
+												</div>
+												<div class="form-col">
+													<label>Salary rate cleaning operator - night</label>
+													<div><input type="text"  /></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Salary rate cleaning operator - overtime</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Cost of incoming water</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Cost of waste water</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Cost of steam</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Cost of electricity</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Cost of air</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Value of 1 hr production time</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Is cleaning time a limiting factor for production</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<fieldset>
+													  <legend>Cleaning chemical Product Name:</legend>
+													  	<div class="form-row">
+															<div class="form-col">
+													  			<input type="text">
+													  		</div>
+													  	</div>
+
+													  	<button class="btn btn-primary btn-sm"><span class="btn-icon-position fa fa-plus "> Add More</span></button>
+													 </fieldset>
+
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<fieldset>
+													  <legend>Cleaning chemical Product Cost:</legend>
+													  	<div class="form-row">
+															<div class="form-col">
+													  			<input type="text">
+													  		</div>
+													  	</div>
+													  	 <button class="btn btn-primary btn-sm"><span class="btn-icon-position fa fa-plus "> Add More</span></button>
+													 </fieldset>
+
+												</div>
+											</div>
+
+										</div>
+									</form>
+								<div class="accordion-footer padding">
+									<button class="btn btn-primary" onclick="openNext(this,5)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+								</div>
+								</div>
+							</div><!--end .accordion-section-->
+
+							<div class="accordion-section" data-accordion-id="5">
+
+								<div class="accordion-header">
+									<a class="accordion-section-title">Quality</a>
+									<i class="accordion-btn fa fa-plus-square-o close"></i>
+
+								</div>
+								<div class="accordion-section-content" style="display:none">
+
+									<form class="padding">
+										<div class="form form-inline">
+											<div class="form-row">
+												<div class="form-col">
+													<label>What quality systems are in place?</label>
+													<div>
+														<select multiple="multiple">
+															<option >AIB</option>
+															<option >Allergen management</option>
+															<option >BRC</option>
+															<option >FSCC22000</option>
+															<option >HACCP</option>
+															<option >Halal</option>
+															<option >IFS</option>
+															<option >Kosher</option>
+															<option >SQF</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>What is the water hardness?</label>
+													<div>
+														<select id="dropdown2">
+															<option>- Select a value -</option>
+															<option>Concentration</option>
+															<option >Currency in report</option>
+															<option >Exchange rate</option>
+															<option >Local currency</option>
+															<option >Pressure</option>
+															<option >Surface</option>
+															<option >Surface in report</option><option >Temperature</option>
+															<option >Volume</option>
+															<option >Volume in report</option>
+															<option >Weight</option>
+														</select>
+														<label for="dropdown2" class="select"></label>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>How is the water micro quality?</label>
+													<div>
+														<select id="dropdown3">
+															<option value="_none">- Select a value -</option>
+															<option value="46">Bad</option>
+															<option value="43">Excellent</option>
+															<option value="44">Good</option>
+															<option value="45">Regular Issues</option>
+														</select>
+														<label for="dropdown3" class="select"></label>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Is water quality monitored?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option1" />
+													      <label for="option1"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option2" name="test2" type="radio" />
+													    	<label for="option2">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>What is the sampling frequency? </label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option3" />
+													      <label for="option3"> year</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option4" name="test2" type="radio" />
+													    	<label for="option4">times</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>What is the % of sickness leave of cleaning crew?</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Reported Lost time due to injuries/year?</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Are operators trained on a yearly base on chemical safety and handling?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option5" />
+													      <label for="option5"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option6" name="test2" type="radio" />
+													    	<label for="option6">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Time spend on training/operator/year? </label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Required hygiene standard for surfaces?</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Are there environmental restrictions for waste water?</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Are chemical stored in a separate room in correct conditions?</label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Are updated PIS and SDS’s available for all chemicals present at the worksite and in the storage rooms</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Are updated SOP's available objects to be cleaned? </label>
+													<div><input type="text"/></div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Is personal protective equipment available, clean and in good condition and used? </label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col">
+													<label>Are there supply issues for cleaning chemicals?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option7" />
+													      <label for="option7"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option8" name="test2" type="radio" />
+													    	<label for="option8">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Describe supply issues?</label>
+													<div><input type="text"/></div>
+												</div>
+												<div class="form-col"></div>
+											</div>
+
+										</div>
+									</form>
+								<div class="accordion-footer padding">
+									<button class="btn btn-primary" onclick="openNext(this,6)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+								</div>
+								</div>
+							</div><!--end .accordion-section-->
+
+							<div class="accordion-section" data-accordion-id="6">
+
+								<div class="accordion-header">
+									<a class="accordion-section-title">Observation</a>
+									<i class="accordion-btn fa fa-plus-square-o close"></i>
+
+								</div>
+								<div class="accordion-section-content" style="display:none">
+
+									<form class="padding">
+										<div class="form form-inline">
+											<div class="form-row">
+												<div class="form-col">
+													<label>Are surfaces checked visually</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option9" />
+													      <label for="option9"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option10" name="test2" type="radio" />
+													    	<label for="option10">Y</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Are surfaces checked with UV</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option11" />
+													      <label for="option11"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option12" name="test2" type="radio" />
+													    	<label for="option12">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Are surfaces checked with endoscopic inspection</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option13" />
+													      <label for="option13"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option14" name="test2" type="radio" />
+													    	<label for="option14">Y</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Are surfaces checked with ATP</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option15" />
+													      <label for="option15"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option16" name="test2" type="radio" />
+													    	<label for="option16">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Are surfaces checked with micro</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option17" />
+													      <label for="option17"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option18" name="test2" type="radio" />
+													    	<label for="option18">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<fieldset>
+													  <legend>Lube frictions</legend>
+													  	<textarea rows="5" cols="90"></textarea>
+													 </fieldset>
+												</div>
+											</div>
+										</div>
+									</form>
+								<div class="accordion-footer padding">
+									<button class="btn btn-primary" onclick="openNext(this,7)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+								</div>
+								</div>
+							</div><!--end .accordion-section-->
+
+							<div class="accordion-section" data-accordion-id="7">
+
+								<div class="accordion-header">
+									<a class="accordion-section-title">CIP Specific Questions</a>
+									<i class="accordion-btn fa fa-plus-square-o close"></i>
+
+								</div>
+								<div class="accordion-section-content" style="display:none">
+
+									<form class="padding">
+										<div class="form form-inline">
+											<div class="form-row">
+												<div class="form-col">
+													<label>Does plant utilize air blows for wash solution recovery?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option19" />
+													      <label for="option19"> N/A</label>
+													    </div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option20" />
+													      <label for="option20"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option21" name="test2" type="radio" />
+													    	<label for="option21">Y</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Does plant utilize air blows to evacuate lines after sanitizing? </label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option22" />
+													      <label for="option22"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option23" name="test2" type="radio" />
+													    	<label for="option23">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Does CIP utilize conductivity to divert rinses?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option24" />
+													      <label for="option24"> N/A</label>
+													    </div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option25" />
+													      <label for="option25"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option26" name="test2" type="radio" />
+													    	<label for="option26">Y</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Does CIP system have a conductivity probe in the return line?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option27" />
+													      <label for="option27"> N/A</label>
+													    </div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option28" />
+													      <label for="option28"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option29" name="test2" type="radio" />
+													    	<label for="option29">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Does the CIP system have a pressure sensor located on the supply line?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option30" />
+													      <label for="option30"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option31" name="test2" type="radio" />
+													    	<label for="option31">Y</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Does the CIP system have a flow meter preferably located on the supply line? </label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option32" />
+													      <label for="option32"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option33" name="test2" type="radio" />
+													    	<label for="option33">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Does the CIP system have a return temperature probe located on the return line? </label>
+													<div>
+
+														<div class="radio">
+													      <input name="test2" type="radio" id="option34" />
+													      <label for="option34"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option35" name="test2" type="radio" />
+													    	<label for="option35">Y</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Is there proof of return?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option36" />
+													      <label for="option36"> N/A</label>
+													    </div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option37" />
+													      <label for="option37"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option38" name="test2" type="radio" />
+													    	<label for="option38">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Does plant have the internal capability with trained people to modify wash programs in the PLC controller?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option39" />
+													      <label for="option39"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option40" name="test2" type="radio" />
+													    	<label for="option40">Y</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Does CIP system have an over temperature control shutdown feature?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option41" />
+													      <label for="option41"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option42" name="test2" type="radio" />
+													    	<label for="option42">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>During wash circulation does the CIP controller alarm / hold / shut down when conductivity falls below set point?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option43" />
+													      <label for="option43"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option44" name="test2" type="radio" />
+													    	<label for="option44">Y</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col"></div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>How are wash detergents injected? on a time feed or conductivity basis from the PLC?</label>
+													<div>
+														<textarea cols="90" rows="5"></textarea>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Is there a maximum time that detergents can be pumped?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option45" />
+													      <label for="option45"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option46" name="test2" type="radio" />
+													    	<label for="option46">Y</label>
+													    </div>
+													    <p>To insure that detergents are not used excessively in case of system failure</p>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Does the steam valve close in situations of no flow?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option47" />
+													      <label for="option47">N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option48" name="test2" type="radio" />
+													    	<label for="option48">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Does the PLC have interlocks to prevent chlorinated products and acids being pumped at same time?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option49" />
+													      <label for="option49"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option50" name="test2" type="radio" />
+													    	<label for="option50">Y</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Is there a high conductivity set point to alarm when sensor or analyzer faults out?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option51" />
+													      <label for="option51"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option52" name="test2" type="radio" />
+													    	<label for="option52">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>If system has a flow meter does it program by flow?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option53" />
+													      <label for="option53"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option54" name="test2" type="radio" />
+													    	<label for="option54">Y</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Are there any cross contaminations issues (raw and cooked/pasteurized) washed on same CIP?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option55" />
+													      <label for="option55"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option56" name="test2" type="radio" />
+													    	<label for="option56">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Are there any dead ends on the CIP system were the dead end is greater than 1.5 times the diameter of the pipe?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option57" />
+													      <label for="option57"> N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option58" name="test2" type="radio" />
+													    	<label for="option58">Y</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Are there any dead ends on the circuit being cleaned were the dead end is greater than 1.5 times the diameter of pipe cleaned? </label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option59" />
+													      <label for="option59">N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option60" name="test2" type="radio" />
+													    	<label for="option60">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>On re-use CIP systems is the rinse tank the furthest from the supply pump?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option61" />
+													      <label for="option61">N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option62" name="test2" type="radio" />
+													    	<label for="option62">Y</label>
+													    </div>
+													</div>
+												</div>
+												<div class="form-col">
+													<label>Does operator effectively conduct chemical titrations using test kit?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option63" />
+													      <label for="option63">N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option64" name="test2" type="radio" />
+													    	<label for="option64">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-col">
+													<label>Are the wash concentrations in range for this audited wash?</label>
+													<div>
+														<div class="radio">
+													      <input name="test2" type="radio" id="option65" />
+													      <label for="option65">N</label>
+													    </div>
+													    <div class="radio">
+													     	<input id="option66" name="test2" type="radio" />
+													    	<label for="option66">Y</label>
+													    </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								<div class="accordion-footer padding">
+									<button class="btn btn-primary" onclick="openNext(this)">CONTINUE <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+								</div>
+								</div>
+							</div><!--end .accordion-section-->
+							<button class="btn btn-primary pull-right" onclick="redirectAquaScan()">
+							Upload Csv <span class="btn-icon-position fa fa-chevron-circle-right"></span></button>
+						</div>
+					</div>
+				</div>
+      		</div>
+    	</div>
+
+		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="js/link.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+  <link rel="stylesheet" href="icomoon/demo-files/demo.css">
+  <link rel="stylesheet" href="icomoon/style.css"></head>
+  <link rel="stylesheet" href="css/font-awesome.css"></head>
+  <script type="text/javascript" src="js/link.js"></script>
+</head>
+<body>
+<div class="main-container">
+  <div class="top-bar">
+    <div class="user-menu">
+      <span class="icon-location">London,UK</span>
+      <div class="notification-icon">
+        <span class="icon-bell"></span>
+        <span class="badge">3</span>
+      </div>
+    </div>
+    <div class="top-header">
+      <h2>USER PROFILE <hr></h2>
+    </div>
+    <div class="logo">
+      <img src="images/new_logo.png" alt="Home">
+    </div>
+  </div>
+  <div class="content-container">
+    <div class="sidebar">
+       <ul>
+        <li><a href="dashboard.html"><i class="fa fa-tachometer"></i></a></li>
+        <li><a href="aqua-scan.html"><i class="fa fa-list"></i></a></li>
+        <li class="active-list-item"><a href="userprofiledisplay.html"><i class="fa fa-user"></i></a>
+        </li>
+        <li><a href="settings.html"><i class="fa fa-cog"></i></a></li>
+      </ul>
+    </div>
+    <div class="parent-profile-container">
+      <h3>User Profile</h3>
+      <div class="user-profile-container">
+        <form>
+          <div class="form form-inline">
+            <div class="form-row">
+              <div class="form-col padding-span-2">
+                <label for="Username" class="label-blue">User Name</label>
+                <div><input type="text" id="username" name="username" placeholder="User name goes here"></div>
+              </div>
+              <div class="form-col padding-span-2">
+                <label for="Displayname" class="label-blue">Display Name</label>
+                <div><input type="text" id="displayname" name="displayname" placeholder="Display name goes here"></div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-col padding-span-2">
+               <label for="Email" class="label-blue">Email</label>
+                <div>
+                 <input type="text" id="Email" name="Email" placeholder="someemail@sealedair.com">
+                </div>
+              </div>
+              <div class="form-col padding-span-2">
+                <label for="check" class="label-blue">Checks Allowed</label>
+                <div><input type="text" id="check" name="check" placeholder="Aqua Check Allowed"></div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-col padding-span-2">
+                <label for="role" class="label-blue">Role</label>
+                <div>
+                 <input type="text" id="role" name="role" placeholder="some role name">
+                </div>
+              </div>
+              <div class="form-col padding-span-2">
+                <label for="businessunit" class="label-blue">Business Unit</label>
+                <div>
+                  <select id="business" class="dropdown-icon" name="business" placeholder="some business name">
+                    <option value="" default selected>Some business name</option>
+                    <option value="business2">business2</option>
+                    <option value="business3">business3</option>
+                  </select>
+                  <label for="dropdown" class="select"></label>
+                </div>
+              </div>
+            </div>
+            <div class="form-row col-span-2">
+             <div class="form-col padding-span-4">
+              <label for="location" class="label-blue">Location</label>
+              <div>
+                <select id="dropdown" placeholder="London,UK">
+                  <option value="australia">London,UK</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+                <label for="dropdown" class="select"></label>
+              </div>
+            </div>
+          </div>
+          </div>
+        </form>
+        <div class="footer">
+          <div>
+            <button id="save" onclick="redirectUserDiplay()" class="button-primary">SAVE <i class="fa fa-floppy-o"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
